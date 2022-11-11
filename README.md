@@ -21,3 +21,4 @@ There are many ways to start the initialization centroids in this algorithm e.g.
 
 ## 1.2. Assigning experts' preferences to each cluster
 In the next step, we calculate the Euclidean distance between each ordering and each cluster and assign the label of the closest cluster to the ordering. The formula used for Euclidean distance is as below:
+<img width="217" alt="Screenshot 2022-11-12 002208" src="https://user-images.githubusercontent.com/102898063/201428928-a16fe82e-9076-46a9-a325-0cbcbc5e9320.png">
