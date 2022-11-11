@@ -21,4 +21,17 @@ There are many ways to start the initialization centroids in this algorithm e.g.
 
 ## 1.2. Assigning experts' preferences to each cluster
 In the next step, we calculate the Euclidean distance between each ordering and each cluster and assign the label of the closest cluster to the ordering. The formula used for Euclidean distance is as below:
+
 <img width="217" alt="Screenshot 2022-11-12 002208" src="https://user-images.githubusercontent.com/102898063/201428928-a16fe82e-9076-46a9-a325-0cbcbc5e9320.png">
+
+# 2. Calculation of preference vector
+Next we calculate the preference vector for each preference, It's easily calculated and the only thing that should be done is to if the ordering is considered as an array, we have to subtract it from n (number of alternatives) and devide the result by the summation starting from 1 to n-1.
+
+For example for r = (2,4,5,3,1): (5 - (2,4,5,3,1))/(1+2+3+4) = (3,1,0,2,4)/10 = (0.3 , 0.1 , 0 , 0.2 , 0.4) = w
+
+In the next stage, the prefernce vector for each cluster should be calculated. The preference vector of subgroup $C_l$ is:
+
+<img width="115" alt="Screenshot 2022-11-12 003256" src="https://user-images.githubusercontent.com/102898063/201430250-bf42f7be-16bb-4d3c-8465-ec4003472f3f.png">
+
+where \# $C_l$ is the number of decision makers in the $l$th cluster. $w^(lt) _i$ $=$ $(w^(lt) _1 , w^(lt) _2 , ... , w^(lt)_n)^T$  is the preference vector of the $t$th expert in subgroup $C_l$.
+
