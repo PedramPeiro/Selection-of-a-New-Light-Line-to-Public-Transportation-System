@@ -35,3 +35,5 @@ In the next stage, the prefernce vector for each cluster should be calculated. T
 
 where \# $C_l$ is the number of decision makers in the $l$th cluster. $w^(lt) _i$ $=$ $(w^(lt) _1 , w^(lt) _2 , ... , w^(lt)_n)^T$  is the preference vector of the $t$th expert in subgroup $C_l$.
 
+After dividing DMs into several subgroups, the next thing is to assign weight to each cluster. Generally, the number of DMs in a group reflects its importance. Let $ζ_l$ be the weight of cluster Cl. If all DMs are given equal importance weights, the weight of a subgroup can be given as:
+$ζ_l$ = \# $C_l/m$
